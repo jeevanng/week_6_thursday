@@ -26,10 +26,19 @@ export default class BusinessCardParent extends Component {
         // this.setState({
         //     name: newStateValue
         // })
+        
+        if (Object.keys(this.state).includes(stateKeyId)){
+            console.log("state contains input field of" + stateKeyId);
+            this.setState({
+                [stateKeyId]: newStateValue
+            })
+        } else {
+            console.warn("Incorrect state was almost created or edited. Nothing else happened")
+        }
 
-        this.setState({
-            [stateKeyId]: newStateValue
-        })
+        // this.setState({
+        //     [stateKeyId]: newStateValue
+        // })
 
         // updateState("name", "some new name")
         // updateState("email", "some new email")
