@@ -7,10 +7,6 @@ function App() {
     <div className="App">
         <BusinessCardParent />
         <BusinessCardParent />
-        <BusinessCardParent />
-        <BusinessCardParent />
-        <BusinessCardParent />
-        <BusinessCardParent />
     </div>
   );
 }
